@@ -23,7 +23,7 @@ p{
 /*---------------------------------------------*/
 /*--- 2. COLORS ---*/
 /*---------------------------------------------*/
-/*DEFAULT COLOR: #171055 */
+/*DEFAULT COLOR: #0A1F44 */
 
 .transparent-nav,
 .is_header_semitransparent .navbar-default.transparent-nav,
@@ -31,7 +31,7 @@ p{
     background: rgba(23,16,85,0.9);
 }
 #navbar .menu .to_whitepaper.menu-item a {
-    background: #171055;
+    background: #0A1F44;
 }
 body.is_header_semitransparent #navbar .menu > .menu-item > a:hover {
     color: #3653f5;
@@ -41,13 +41,13 @@ body.is_header_semitransparent #navbar .menu > .menu-item > a:hover {
     color: #6cd087;
 } 
 .page-fill {
-    background-color: #171055;
+    background-color: #0A1F44;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .cryptic_one_page.data_background {
-    background-color: #171055;
+    background-color: #0A1F44;
 }
 .decentralized-total-contribution,
 .timelinehorizontal ol li div,
