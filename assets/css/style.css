@@ -31093,94 +31093,68 @@ body {
     color: #ffffff;
 }
 
-/* Centered layout with controlled width */
+/* CENTERED MAIN SECTION */
 .team-section {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 40px;
-    gap: 60px;              /* more balanced spacing */
-}
-
-/* LEFT SIDE (Title) */
-.left-block {
-    flex: 0.9;             /* a bit smaller */
-    max-width: 420px;
-}
-
-.subtitle {
-    color: #1eb4ff;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-
-.title {
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 1.05;
-    color: #ffffff;
-    margin-top: 15px;
-}
-
-/* RIGHT SIDE — NOW WIDER */
-.profile-card {
-    flex: 1.4;             /* MORE SPACE FOR BIOGRAPHY */
+    max-width: 1200px;
+    margin: 80px auto;
     display: flex;
     align-items: flex-start;
-    gap: 25px;
+    gap: 50px;
+    padding: 20px 40px;
 }
 
+/* IMAGE ON THE LEFT */
 .profile-image {
     background: #00a6ff;
-    padding: 15px;
+    padding: 18px;
     border-radius: 20px;
-    flex-shrink: 0;        /* keeps image size fixed */
+    flex-shrink: 0;
 }
 
 .profile-image img {
-    width: 230px;
+    width: 260px;
     border-radius: 12px;
 }
 
-/* BIOGRAPHY AREA — MUCH WIDER NOW */
+/* TEXT ON THE RIGHT — LEFT ALIGNED */
 .profile-info {
-    max-width: 450px;      /* was 260px → now wide and readable */
-    color: #ffffff !important;
+    max-width: 500px;
+    text-align: left;
+    color: #ffffff;
 }
 
 .name {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 5px;
+    font-weight: 700;
 }
 
 .role {
     font-size: 15px;
-    margin-bottom: 12px;
-}
-
-.linkedin {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 .description {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.6;
     margin-bottom: 25px;
-    color: #ffffff;
+    opacity: 0.95;
 }
 
-.learn-more {
+/* LINKEDIN UNDER THE BIOGRAPHY */
+.linkedin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.linkedin a {
     color: #1eb4ff;
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 2px solid #1eb4ff;
-    padding-bottom: 3px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* MOBILE */
@@ -31188,17 +31162,15 @@ body {
     .team-section {
         flex-direction: column;
         text-align: center;
-        padding: 40px 20px;
         gap: 30px;
     }
 
-    .profile-card {
-        flex-direction: column;
-        align-items: center;
+    .profile-info {
+        text-align: center;
+        max-width: 100%;
     }
 
-    .profile-info {
-        max-width: 100%;
-        text-align: center;
+    .linkedin {
+        justify-content: center;
     }
 }
