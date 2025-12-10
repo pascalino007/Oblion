@@ -6835,7 +6835,7 @@ input:focus,
   -webkit-transition: all 300ms ease;
 }
 .breadcrumb a:hover {
-  color: #252525;
+  color: #fff;
 }
 .pagination {
   font-size: 11px;
@@ -6902,5 +6902,5 @@ input:focus,
 .panel-default .panel-heading,
 .panel-default .panel-title,
 .panel-default .panel-footer {
-  color: #252525;
+  color: #fff;
 }

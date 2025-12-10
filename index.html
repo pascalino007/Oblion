@@ -26,459 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-    /* GENERAL MENU STYLING */
-    #navbar .menu a {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        letter-spacing: 1px;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: #ffffff;
-        padding: 14px 18px;
-        transition: all 0.25s ease-in-out;
-    }
-
-    /* Hover effect: glowing neon like crypto exchanges */
-    #navbar .menu a:hover {
-        color: #00f6ff;
-        text-shadow: 0 0 8px #00f6ff;
-    }
-
-    /* ACTIVE or CURRENT page */
-    #navbar .menu .current-menu-parent > a,
-    #navbar .menu .current_page_parent > a {
-        color: #00f6ff !important;
-        border-bottom: 2px solid #00f6ff;
-    }
-
-    /* Menu container */
-    #navbar .menu {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-    }
-
-    /* Background transparent with blur for crypto effect */
-    #navbar {
-        backdrop-filter: blur(12px);
-        background: rgba(0, 0, 0, 0.35);
-        padding: 10px 0;
-        border-radius: 12px;
-    }
-
-    /* Mobile */
-    @media (max-width: 768px) {
-        #navbar .menu {
-            flex-direction: column;
-            text-align: center;
-        }
-    }
-
-      footer {
-        padding: 80px 0 40px;
-        background: #fafafa;
-        font-family: 'Poppins', sans-serif;
-        color: #0d0d0d;
-    }
-
-    /* Footer layout */
-    .footer-container {
-        max-width: 1250px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1.2fr 1fr 1fr;
-        gap: 50px;
-        padding: 0 40px;
-    }
-
-    /* Titles */
-    footer h3 {
-        font-size: 26px;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-
-    footer h4 {
-        font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 18px;
-    }
-
-    /* Text */
-    footer p {
-        font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 20px;
-        color: #1a1a1a;
-        max-width: 350px;
-    }
-
-    /* Links */
-    .footer-links a {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 14px;
-        font-weight: 500;
-        color: #0d0d0d;
-        text-decoration: none;
-        position: relative;
-        width: fit-content;
-    }
-
-    /* underline style */
-    .footer-links a::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        width: 100%;
-        height: 2px;
-        background: #000b33;
-    }
-
-    /* Social icons */
-    .social-row {
-        display: flex;
-        gap: 15px;
-        font-size: 18px;
-        margin: 25px 0;
-    }
-
-    .social-row a {
-        color: #0d0d0d;
-    }
-
-    /* Partnerships */
-    .partners {
-        margin-top: 20px;
-    }
-
-    .partners img {
-        height: 35px;
-        margin-right: 15px;
-    }
-
-    /* Divider */
-    .footer-divider {
-        height: 1px;
-        background: #dbdbdb;
-        margin: 40px auto;
-        max-width: 1250px;
-    }
-
-    /* Disclaimer */
-    .footer-disclaimer {
-        max-width: 1250px;
-        margin: auto;
-        padding: 0 40px;
-        font-size: 13px;
-        line-height: 1.6;
-        color: #444;
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-        .footer-container {
-            grid-template-columns: 1fr;
-            text-align: left;
-        }
-    }
-
-   .oe-terms-section {
-    margin: 0;
-    position: relative;
-    background-image: url('./assets/images/transfertcrypto2.jpg'); /* check filename typo */
-    background-size: cover;
-    background-position: center;
-    padding: 120px 20px;
-    text-align: center;
-    color: #fff;
-    overflow: hidden;
-}
-
-/* Black overlay */
-.oe-terms-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* adjust darkness */
-    z-index: 1;
-}
-
-/* Make all inner content appear ABOVE the overlay */
-.oe-terms-section > * {
-    position: relative;
-    z-index: 2;
-}
-
-.oe-terms-wrapper {
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Title */
-.oe-terms-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 800;
-    margin-bottom: 40px;
-}
-
-/* Turn cards into grid */
-.oe-terms-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
-}
-
-/* Cards style */
-.oe-terms-card {
-    background: #fff;
-    text-align:left ;
-    padding: 25px;
-    border-radius: 16px;
-    border: 1px solid #e6e6e6;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-}
-
-.oe-terms-card h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    color:#000b33 ;
-}
-
-.oe-terms-card p,
-.oe-terms-card ul {
-    font-size: 15px;
-    color: #444;
-    line-height: 1.6;
-}
-
-.oe-terms-card ul {
-    list-style: none;      /* remove bullets */
-    padding-left: 0;       /* optional: remove default UL padding */
-}
-
-.oe-terms-card ul li {
-    position: relative;
-    padding-left: 28px;    /* space for the check */
-    margin-bottom: 10px;
-}
-
-/* Checkmark */
-.oe-terms-card ul li::before {
-    content: "✔";          /* the check icon */
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #00c853;        /* green check (change as needed) */
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1;
-}
-
-/* Section Background */
-.raised-section {
-    position: relative;
-    background-image: url('./assets/images/downimage.jpg'); 
-    background-size: cover;
-    background-position: center;
-    padding: 120px 20px;
-    text-align: center;
-    color: #fff;
-    overflow: hidden;
-}
-
-/* Black overlay */
-.raised-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);  /* darker overlay */
-    backdrop-filter: brightness(0.7);
-    z-index: 1;
-}
-
-.raised-content {
-    position: relative;
-    z-index: 2; /* so text stays above overlay */
-    max-width: 900px;
-    margin: auto;
-}
-
-/* Amount */
-.raised-amount {
-    font-size: 58px;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-/* Subtitle */
-.raised-text {
-    font-size: 20px;
-    line-height: 1.6;
-    max-width: 650px;
-    margin: 0 auto 40px auto;
-}
-
-/* Buttons */
-.raised-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.btn {
-    padding: 12px 28px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-/* Primary Button */
-.btn-primary {
-    background: #0a0f3b;
-    color: white;
-}
-
-/* Secondary Button */
-.btn-secondary {
-    background: white;
-    color: #0a0f3b;
-}
-
-/* Floating Cube Image */
-.cube-img {
-    position: absolute;
-    top: -20px;
-    right: 40px;
-    width: 180px;
-    pointer-events: none;
-    user-select: none;
-}
-
-@media (max-width: 768px) {
-    .raised-amount {
-        font-size: 42px;
-    }
-
-    .cube-img {
-        width: 110px;
-        right: 10px;
-        top: -10px;
-    }
-}
-
-/* Section */
-.stats-section {
-    
-    text-align: center;
-    color: white;
-}
-
-.stats-title {
-    font-size: 35px;
-    font-weight: 800;
-    margin-bottom: 60px;
-    line-height: 1.2;
-}
-
-/* Grid container */
-.stats-grid {
-    max-width: 1300px;
-    margin: auto;
-    display: grid;
-    gap: 28px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-
-/* Cards */
-.stat-card {
-    background: #07124a;
-    padding: 40px;
-    border-radius: 22px;
-    border: 1px solid rgba(120, 150, 255, 0.2);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
-    text-align: left;
-}
-
-/* Wide cards (bottom row) */
-.stat-card.wide {
-    grid-column: span 2;
-}
-
-@media (max-width: 900px) {
-    .stat-card.wide {
-        grid-column: span 1; /* stack naturally on mobile */
-    }
-}
-
-.icon {
-    font-size: 32px;
-    opacity: 0.8;
-    margin-bottom: 16px;
-}
-
-.stat-card h2 {
-    font-size: 40px;
-    margin: 0 0 6px;
-    font-weight: 800;
-}
-
-.stat-card h3 {
-    font-size: 18px;
-    margin: 0 0 10px;
-    opacity: 0.9;
-}
-
-.stat-card p {
-    font-size: 14px;
-    opacity: 0.75;
-    line-height: 1.5;
-}
-
-.countdown {
- margin : 100px ;
- padding-left: 200px;
-  display: flex;
-  gap: 25px;
-}
-
-.time-box {
-  width: 110px;
-  height: 110px;
-  background: #0b0f1a;
-  border-radius: 18px;
-  border: 2px solid rgba(0, 255, 255, 0.4);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.time-box .number {
-  font-size: 42px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.time-box .label {
-  margin-top: 6px;
-  font-size: 12px;
-  color: #a8c5ff;
-  letter-spacing: 1px;
-}
-
+  
 </style>
 
 
@@ -615,7 +163,7 @@
               <li><a href="index.html#to_token_sale">VISION  </a></li>
               <li><a href="index.html#to_products">ECOSYSTEM  </a></li>
               <li><a href="index.html#to_roadmap">ROADMAP</a></li>
-              <li><a href="index.html#to_team">EQUIPE </a></li>
+              <li><a href="faq.html">FAQ</a></li>
               <li><a href="index.html#to_testimonial">A PROPOS </a></li>
               <li><a href="contact.html">CONTACT </a></li>
               <li><a href="blog.html">NEWS </a></li>
@@ -651,17 +199,17 @@
                                     <div class="row vc_row-has-fill">
                                         <div class="spacer_80"></div>
                                         <div class="col-sm-12 col-md-12">
-                                            <h1 class="wow fadeInDown wpb_start_animation" style="font-family: 'Montserrat'">Tant que l’Europe existera<br /> Initial Coin Offering</h1>
+                                            <h1 class="wow fadeInDown wpb_start_animation" style="font-family: 'Montserrat' ; font-size: 65px ;  " >Tant que l’Europe existera<br /> </h1>
                                             <h3 class="wow fadeInDown wpb_start_animation" style="font-family: 'Montserrat'" >Le token utlitaire européen pour simplifier vos échanges numériques</h3>
                                            
                                             
                                             <div class="spacer_30"></div>
-                                           <!--  <div class="text-right BitWallet-btn modeltheme_button wow fadeInLeft wpb_start_animation">
-                                                <a href="contact.html" class="btn btn-primary">Rejoindre la communauté</a>
+                                             <div class="text-right BitWallet-btn modeltheme_button wow fadeInLeft wpb_start_animation">
+                                                <a style="font-family: 'Montserrat' " href="https://t.me/OblionE_Official" class="btn btn-primary">Rejoindre la communauté</a>
                                             </div>
                                             <div class="text-left BitWallet-btn modeltheme_button wow fadeInLeft wpb_start_animation">
-                                                <a href="#" class="btn btn-primary">ACHETER LES TOKENS</a>
-                                            </div> -->
+                                                <a style="font-family: 'Montserrat' " href="https://t.me/OblionE_Official" class="btn btn-primary">Acheter des Tokens</a>
+                                            </div> 
                                            
 
                                           <!--   <div class="countdown">
@@ -709,8 +257,7 @@
                                             <div class="spacer_10"></div>
                                             
                                         </div>
-                                        <br>
-                                        <br>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -1208,8 +755,9 @@ week-end. L’objectif : des échanges fluides pour les dépenses du quotidien.<
                                                                     <div class="testimonial02_stars col-md-6 text-white"></div>
                                                                 </div>
                                                                 <div class="testimonial02_text_content col-md-12 text-left">
-                                                                    <p class="text-white">The support teams are very professional and friendly. Although I got quite intimidate by all settings and customisation of the theme, they helps make my life much easier. The support teams are very professional and friendly.
-                                                                        Although I got quite intimidate by all settings and customisation of the theme, they helps make my life much easier.</p>
+                                                                    <p class="text-white">Pour mon entreprise, Oblin.E représente une valeur ajoutée concrète.
+Grâce au token, nous bénéficions d’un écosystème structuré, sécurisé, et surtout évolutif.
+Ce n’est pas une promesse financière : c’est un outil fonctionnel qui booste réellement la productivité et l’innovation..</p>
                                                                 </div>
                                                                 <h4 class="testimonial02_position col-md-12 text-white">Regional Manager</h4>
                                                             </div>
@@ -1229,8 +777,9 @@ week-end. L’objectif : des échanges fluides pour les dépenses du quotidien.<
                                                                     <div class="testimonial02_stars col-md-6 text-white"></div>
                                                                 </div>
                                                                 <div class="testimonial02_text_content col-md-12 text-left">
-                                                                    <p class="text-white">The support teams are very professional and friendly. Although I got quite intimidate by all settings and customisation of the theme, they helps make my life much easier. The support teams are very professional and friendly.
-                                                                        Although I got quite intimidate by all settings and customisation of the theme, they helps make my life much easier.</p>
+                                                                    <p class="text-white">Oblion.E ma permis de rejoindre des programmes communautaires avant tout le monde.
+J’apprécie particulièrement l’accès anticipé aux nouvelles fonctionnalités et la proximité avec la communauté Oblion.E.
+On sent que c’est un projet sérieux et orienté vers l’avenir.</p>
                                                                 </div>
                                                                 <h4 class="testimonial02_position col-md-12 text-white">General Director</h4>
                                                             </div>
@@ -1246,12 +795,12 @@ week-end. L’objectif : des échanges fluides pour les dépenses du quotidien.<
                                                         <div class="testimonial02-content">
                                                             <div class="testimonial02_text">
                                                                 <div class="testimonial02_rating_titles col-md-12">
-                                                                    <h4 class="testimonial02_title col-md-6 text-white">John Doe</h4>
+                                                                    <h4 class="testimonial02_title col-md-6 text-white">Joel Assi</h4>
                                                                     <div class="testimonial02_stars col-md-6 text-white"></div>
                                                                 </div>
                                                                 <div class="testimonial02_text_content col-md-12 text-left">
-                                                                    <p class="text-white">The support teams are very professional and friendly. Although I got quite intimidate by all settings and customisation of the theme, they helps make my life much easier. The support teams are very professional and friendly.
-                                                                        Although I got quite intimidate by all settings and customisation of the theme, they helps make my life much easier.</p>
+                                                                    <p class="text-white">Simple, utile et sécurisé.”
+En rejoignant l’écosystème Oblion.E, j’ai rapidement compris que OE va bien au-delà d’un simple token. Il apporte structure, avantages, communauté et de vraies fonctionnalités concrètes. C’est ce qui fait toute la différence</p>
                                                                 </div>
                                                                 <h4 class="testimonial02_position col-md-12 text-white">Assistant Manager</h4>
                                                             </div>
@@ -1308,16 +857,17 @@ week-end. L’objectif : des échanges fluides pour les dépenses du quotidien.<
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="title-subtile-holder wow fadeIn text_center no-padding">
+                                      
+                                        <div class="title-subtile-holder wow  ">
                                             <h1 class="section-title light_title no-margin">NEWS</h1>
                                             <div class="spacer_10"></div>
                                             <div class="clearfix"></div>
                                             <div class="section-border green_border no-margin"></div>
                                             <div class="spacer_10"></div>
-                                            <div class="section-subtitle light_subtitle">
-                                                It’s an ever-changing business. To stay on top of the   <br> game, don’t forget to keep yourself in the know.
-                                            </div>
+                                            
                                         </div>
+                                       
+                                    </div>
                                         <div class="spacer_80"></div>
                                         <div class="blog-posts simple-posts blog-posts-shortcode wow fadeIn">
                                             <div class="row">
@@ -1445,8 +995,8 @@ week-end. L’objectif : des échanges fluides pour les dépenses du quotidien.<
 	    </a>
 	     
 	     <!-- TICKERS DARK -->
-	    <div class="tickers-black-sm crypto-ticker">
-	        <ul id="webticker-dark-icons">
+	    <div class="tickers-black-sm crypto-ticker" >
+	        <ul id="webticker-dark-icons" style="background-color: #444;">
 	            <li data-update="item1"><i class="cc BTC"></i> BTC <span class="coin-value"> $11.039232</span></li> 
 	            <li data-update="item2"><i class="cc ETH"></i> ETH <span class="coin-value"> $1.2792</span></li> 
 	            <li data-update="item3"><i class="cc GAME"></i> GAME <span class="coin-value"> $11.039232</span></li> 
@@ -1481,7 +1031,7 @@ week-end. L’objectif : des échanges fluides pour les dépenses du quotidien.<
         </p>
 
         <div class="raised-buttons">
-            <a href="#" class="btn btn-primary">Acheter  </a>
+            <a href="https://t.me/OblionE_Official" class="btn btn-primary">Acheter  </a>
             <a href="#" class="btn btn-secondary">How To Buy</a>
         </div>
 
@@ -1521,7 +1071,7 @@ week-end. L’objectif : des échanges fluides pour les dépenses du quotidien.<
             <div class="partners">
                 <h4>Social Media</h4>
                <a href=" https://x.com/oblion_e"> <img  src="assets/images/logos/twitter.webp" alt="Twitter"> </a> 
-               <a href=""> <img  alt="Facebook"> </a>
+               <a href=""> <img  src="assets/images/logos/Facebook.png" alt="Facebook"> </a>
             </div>
         </div>
 
@@ -1534,16 +1084,8 @@ week-end. L’objectif : des échanges fluides pour les dépenses du quotidien.<
                 <a href="#">ABOUT</a>
                 <a href="#">ECOSYSTEM</a>
                 <a href="#">TECHNOLOGY</a>
-                <a href="#">DEVELOPER HUB</a>
-                <a href="#">NEWS & ARTICLES</a>
-                <a href="#">SUPPORT</a>
-                <a href="#">TESTNET AWAKENING</a>
-                <a href="#">EXPLORER</a>
-                <a href="#">FAUCET</a>
-                <a href="#">IDE</a>
-                <a href="#">WIKI</a>
-                <a href="#">VALIDATION</a>
-                <a href="#">REFERRAL PROGRAM</a>
+                <a href="faq.html">FAQ</a>
+               
             </div>
         </div>
 
@@ -1552,14 +1094,9 @@ week-end. L’objectif : des échanges fluides pour les dépenses du quotidien.<
             <h4>Legals</h4>
             <div class="footer-links">
                 <a href="#">TERMS OF USE</a>
-                <a href="#">COOKIE POLICY</a>
                 <a href="#">PRIVACY POLICY</a>
-                <a href="#">TOKENOMICS</a>
-                <a href="#">WHITEPAPER</a>
-                <a href="#">LITEPAPER</a>
                 <a href="#">ROADMAP</a>
-                <a href="#">PRESS KIT</a>
-                <a href="#">PRIVATE CLIENTS</a>
+              
             </div>
         </div>
     </div>

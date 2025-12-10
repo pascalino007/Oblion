@@ -332,7 +332,7 @@ xfilter
   color: #ffffff;
   font-size: 14px;
   text-align: center;
-  background: #252525;
+  background: #fff;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
@@ -554,7 +554,7 @@ xcustom form elements
   user-select: none;
   cursor: pointer;
   margin-bottom: 0;
-  color: #252525;
+  color: #fff;
 }
 .cd-filter-block .checkbox-label::before, .cd-filter-block .checkbox-label::after,
 .cd-filter-block .radio-label::before,
@@ -1232,7 +1232,7 @@ body.archive,
 .blog_custom_listings .post-name-listings a {
     font-size: 24px;
     line-height: 1;
-    color: #252525;
+    color: #fff;
 }
 .blog_custom_listings .mt_listing_category_recent {
     font-size: 14px;
@@ -1255,7 +1255,7 @@ body.archive,
     float: right;
 }
 .blog_custom_listings  .mt_listing_interest_end_date {
-    color: #252525;
+    color: #fff;
 }
 .single-icondrops .col-md-2 .blog_post_image,
 .blog_custom_listings img{

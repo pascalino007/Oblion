@@ -329,7 +329,7 @@ article.single-post .mt_cars--extra-pics img {
     opacity: 0.7;
 }
 .dark_title {
-    color: #252525;
+    color: #fff;
 }
 .dark_subtitle {
     color: #666666;
@@ -1587,7 +1587,7 @@ img.mfp-img {
     margin-right: 20px;
 }
 .newsletter input[type="submit"] {
-    background-color: #252525;
+    background-color: #fff;
     border: 0 none;
     color: #ffffff;
     float: left;
@@ -1605,7 +1605,7 @@ img.mfp-img {
 }
 .newsletter input[type="submit"]:hover {
     background: #fff;
-    color: #252525;
+    color: #fff;
 }
 .subscribe .result {
     display: block;
@@ -2829,12 +2829,12 @@ button.vc_btn {
     padding: 0 !important;
 }
 .house_display_posts {
-    color: #252525;
+    color: #fff;
     font-weight: 100;
 }
 
 .house_display_posts a {
-    color: #252525 !important;
+    color: #fff !important;
 }
 .single-property-listing .house_display_posts {
     font-weight: 300;
@@ -2871,7 +2871,7 @@ h3.post-name.row.car-name a {
 
 
 h3.post-name.row.car-name:hover {
-    background: #252525;
+    background: #fff;
 }
 
 h3.post-name.row.car-name:hover a {
@@ -3044,7 +3044,7 @@ figure.effect-apollo:hover p {
     color: rgba(0,0,0,.4) !important;
 }
 .mt-car-search .submit .form-control:hover {
-    background: #252525 !important;
+    background: #fff !important;
 }
 .mt-car-search .form-control {
     height: 40px;
@@ -3155,7 +3155,7 @@ figure.effect-apollo:hover p {
     font-weight: 600;
     text-transform: none;
     line-height: normal;
-    color: #252525;
+    color: #fff;
     transition: all 300ms ease;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
@@ -3211,7 +3211,7 @@ figure.effect-apollo:hover p {
 }
 .blog-posts-shortcode .text-element.content-element p {
     font-size: 13px;
-    color: #252525;
+    color: #fff;
     font-weight: 500;
 }
 .blog-posts-shortcode .text-element.content-element p a {
@@ -3986,7 +3986,7 @@ form .content {
 .members_img_holder .member01-content {
     background: transparent !important;
     bottom: 0px;
-    color: #252525;
+    color: #fff;
     padding: 20px 0px 30px;
     text-align: center;
     transition: all 250ms ease-in-out;
@@ -3999,7 +3999,7 @@ form .content {
     line-height: 33px;
     margin: 0;
     text-transform: capitalize;
-    color: #252525;
+    color: #fff;
     margin-bottom: 5px;
     text-align: left;
 }
@@ -4051,7 +4051,7 @@ p.member01_content-desc {
     display: inline-block;
     margin: 3px;
     transition: all 400ms ease;
-    color: #252525 !important;
+    color: #fff !important;
     border: 1px solid rgba(204, 204, 204, 0.5);
 }
 
@@ -4991,7 +4991,7 @@ Main components
     margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #252525;
+  background: #fff;
 }
 .cd-timeline-img.cd-movie {
   background: #c03b44;
@@ -5100,7 +5100,7 @@ Main components
   clear: both;
 }
 .cd-timeline-content h3 {
-  color: #252525;
+  color: #fff;
   font-weight: 900;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -5113,7 +5113,7 @@ Main components
 .cd-timeline-content .cd-read-more {
     float: right;
     padding: 11px 25px;
-    background: #252525;
+    background: #fff;
     color: white;
     border-radius: 0.25em;
     font-weight: 700;
@@ -5354,7 +5354,7 @@ section#cd-timeline.version2 .cd-timeline-img img {
 }
 
 section#cd-timeline.version2 .cd-timeline-content {
-    background: #252525;
+    background: #fff;
     box-shadow: 0 3px 0 #6cd087;
     border-radius: 0;
     text-align: left;
@@ -5380,7 +5380,7 @@ section#cd-timeline.version2 .mt_shortcode_timeline_items.cd-timeline-block .cd-
     -webkit-transition: all 300ms ease;
 }
 section#cd-timeline.version2 .mt_shortcode_timeline_items.cd-timeline-block .cd-read-more:hover {
-    color: #252525;
+    color: #fff;
 }
 
 section#cd-timeline.version2 .cd-timeline-content p {
@@ -5394,11 +5394,11 @@ section#cd-timeline.version2 .cd-date {
 }
 
 section#cd-timeline.version2 .cd-timeline-block:nth-child(odd) .cd-timeline-content::before {
-    border-left-color: #252525;
+    border-left-color: #fff;
 }
 
 section#cd-timeline.version2 .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
-    border-right-color: #252525;
+    border-right-color: #fff;
 }
 
 section#cd-timeline.version2::before {
@@ -5423,7 +5423,7 @@ section#cd-timeline.timeline_left .cd-timeline-block:nth-child(even) .cd-timelin
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: #252525;
+    border-left-color: #fff;
 }
 section#cd-timeline.timeline_left {
     width: 100% !important;
@@ -5454,7 +5454,7 @@ section#cd-timeline.timeline_right .cd-timeline-img {
 }
 section#cd-timeline.timeline_right .cd-timeline-content::before {
     left: auto;
-    border-right-color: #252525;
+    border-right-color: #fff;
     border-left-color: transparent !important;
 }
 /*34. MT BLOG POSTS LIST*/

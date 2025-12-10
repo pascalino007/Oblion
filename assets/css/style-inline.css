@@ -479,13 +479,13 @@ body #navbar .menu-item.selected > a, body #navbar .menu-item:hover > a{
     background-color:#f7f7f7;
 }
 #navbar ul.sub-menu li a{
-    color:#252525;
+    color:#fff;
 }
 #navbar ul.sub-menu li a:hover{
     background-color:transparent;
 }
 #modeltheme-main-head.navbar-default{
-    background-color:#252525;
+    background-color:#fff;
 }
 .fixed-sidebar-menu{
     background-color:rgba(255,255,255,0.95);
@@ -531,7 +531,7 @@ body #navbar .menu-item.selected > a, body #navbar .menu-item:hover > a{
     z-index: 99;
 }
 .btn-sticky-left a i {
-    color: #252525;
+    color: #fff;
     font-size: 18px;
 }
 .btn-sticky-left:hover > a {
@@ -559,7 +559,7 @@ body #navbar .menu-item.selected > a, body #navbar .menu-item:hover > a{
 }
 .buy-coin a {
     background-color: #ffd600;
-    color: #252525;
+    color: #fff;
     font-size: 16px;
     border-radius: 5px;
     padding: 18px 25px;
@@ -567,10 +567,10 @@ body #navbar .menu-item.selected > a, body #navbar .menu-item:hover > a{
 .buy-coin a:hover,
 .buy-coin button:hover {
     background-color: #e5c000;
-    color: #252525;
+    color: #fff;
 }
 .single_bar span {
-    color: #252525;
+    color: #fff;
 }
 .modeltheme-countdown > div {
     border: 4px solid #ffffff;
@@ -601,7 +601,7 @@ body #navbar .menu-item.selected > a, body #navbar .menu-item:hover > a{
 }
 .cryptic_customer h2 {
     font-size: 30px;
-    color: #252525;
+    color: #fff;
     line-height: 35px;
     text-align: left;
     font-family:Orbitron;
@@ -617,7 +617,7 @@ body #navbar .menu-item.selected > a, body #navbar .menu-item:hover > a{
 
 /* 3. Section2 - Token sale stats */
 .live-coin-v3 {
-    background: #252525;
+    background: #fff;
     margin: 0 auto;
     padding: 30px;
 }
@@ -629,7 +629,7 @@ body #navbar .menu-item.selected > a, body #navbar .menu-item:hover > a{
     color: #ffd500;
 }
 .background-black {
-    background: #252525;
+    background: #fff;
     color: rgba(255, 255, 255, 0.87);
 }
 .element-box-shadow {
@@ -648,7 +648,7 @@ body #navbar .menu-item.selected > a, body #navbar .menu-item:hover > a{
 .dark-version .mc4wp-form input[type="submit"]:hover,
 .cryptic_ico_filter_big_db .mt-car-search .submit .form-control:hover {
     opacity: 0.9;
-    color: #252525;
+    color: #fff;
 }
 .button-winona.btn.btn-medium.btn_custom_whitepaper:hover {
     opacity: 0.9;

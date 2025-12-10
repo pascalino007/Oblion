@@ -204,7 +204,7 @@ URL:        http://cryptic.modeltheme.com/
         position: relative !important;
     }
     .is_header_semitransparent .navbar-default {
-        background: #252525 !important;
+        background: #fff !important;
     }
     .testimonial02_text_content p {
         font-size: 14px !important;
@@ -320,11 +320,11 @@ URL:        http://cryptic.modeltheme.com/
     }
     body.missing-modeltheme-framework.header4 header #navbar .sub-menu .menu-item > a,
     body.missing-redux-framework.header4 header #navbar .sub-menu .menu-item > a{
-        color: #252525;
+        color: #fff;
     }
     body.header1 header #navbar .sub-menu .menu-item > a,
     body.header4 header #navbar .sub-menu .menu-item > a{
-        color: #252525;
+        color: #fff;
     }
     header .header-infos .header-info-icon {
         display: none;
