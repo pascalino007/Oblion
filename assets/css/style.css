@@ -127,7 +127,7 @@
 html,body { 
     height: 100%; 
     width: 100%; 
-    
+    font-family : 'Montserrat' ;
 }
 body{
     overflow-x: hidden; 
@@ -31026,8 +31026,8 @@ ul#webticker-dark-icons li i {
 }
 
 .stats-title {
-    font-size: 48px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 400;
     margin-bottom: 60px;
     line-height: 1.2;
 }
@@ -31242,9 +31242,9 @@ body {
 }
 
 .nav-menu ul li a {
-    color: #fff;
+    color: red;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 1px;
 }
 
@@ -31300,7 +31300,8 @@ body {
 .nav-menu ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
+    font-family: 'Montserrat' ;
     letter-spacing: 1px;
 }
 }
@@ -31328,6 +31329,14 @@ body {
     .nav-menu ul li {
         margin: 0;
     }
+
+    .nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Montserrat' ;
+    letter-spacing: 1px;
+}
 }
 
 
@@ -31352,5 +31361,14 @@ body {
     padding-left: 15px ;
     float: none !important;       /* remove grid/float effects */
 }
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Montserrat' ;
+    letter-spacing: 1px;
+}
  
 }
+
