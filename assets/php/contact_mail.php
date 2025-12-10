@@ -7,13 +7,13 @@
 <?php
 
     if (isset($_POST['contact_me'])) {
-        $to = 'cristianstaan@gmail.com';
+        $to = 'myikigai2025@gmail.com';
         $form_user_name = $_POST['user_name'];
         $form_user_last_name = $_POST['user_last_name'];
         $form_user_email = $_POST['user_email'];
         $form_comment = $_POST['user_message'];
 
-        $message = '';
+        $message = 'Hello from Oblion Site';
         $message .= "From: " .  $form_user_name . " " . $form_user_last_name . "\r\n";
         $message .= "Email: " . $form_user_email . "\r\n" . "\r\n";
         $message .= $form_comment . "\r\n";

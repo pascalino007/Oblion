@@ -31247,6 +31247,12 @@ body {
     font-size: 14px;
     letter-spacing: 1px;
 }
+.nav-menu ul li a {
+    color: red;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
 
 /* WHEN ACTIVE (JS adds .active) */
 .nav-menu.active {
