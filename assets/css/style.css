@@ -30827,7 +30827,7 @@ ul#webticker-dark-icons li i {
    .oe-terms-section {
     margin: 0;
     position: relative;
-    background-image: url('./assets/images/mountains.jpg.jpg'); /* check filename typo */
+    background-image: url('../images/downimage.jpg'); /* check filename typo */
     background-size: cover;
     background-position: center;
     padding: 120px 20px;
@@ -30924,7 +30924,7 @@ ul#webticker-dark-icons li i {
 /* Section Background */
 .raised-section {
     position: relative;
-    background-image: url('./assets/images/downimage.jpg'); 
+    background-image: url('../images/downimage.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 120px 20px;
@@ -31536,7 +31536,7 @@ body {
    .oe-terms-section {
     margin: 0;
     position: relative;
-    background-image: url('./assets/images/transfertcrypto2.jpg'); /* check filename typo */
+    background-image: url('../images/transfertcrypto2.jpg'); /* check filename typo */
     background-size: cover;
     background-position: center;
     padding: 120px 20px;
@@ -31633,7 +31633,7 @@ body {
 /* Section Background */
 .raised-section {
     position: relative;
-    background-image: url('./assets/images/downimage.jpg'); 
+    background-image: url('../images/downimage.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 120px 20px;
