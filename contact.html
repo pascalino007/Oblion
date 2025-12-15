@@ -7,8 +7,7 @@
     <meta name='robots' content='noindex,follow' />
     <link rel="shortcut icon" href="assets/images/Oblogosolo.png">
     <title>Oblion.E | Token </title>
-    
-    <!-- CSS -->
+    <link rel='stylesheet' type='text/css' media='all' href='assets/css/custom.css' />
     <link rel='stylesheet' type='text/css' media='all' href="assets/css/simple-line-icons.css"/>
     <link rel='stylesheet' type='text/css' media='all' href='assets/css/cryptocoins.css'/>
     <link rel='stylesheet' type='text/css' media='all' href='assets/css/style-inline.css'/>
@@ -17,6 +16,7 @@
 	<link rel='stylesheet' type='text/css' media='all' href='assets/css/animate.css' />
 	<link rel='stylesheet' type='text/css' media='all' href='assets/css/responsive.css' />
 	<link rel='stylesheet' type='text/css' media='all' href='assets/css/style.css' />
+    
     <link id="ui-current-skin" rel='stylesheet' type='text/css' media='all' href="assets/css/skin-colors/skin0.css"/>
 	<link rel='stylesheet' type='text/css' media='all' href='assets/plugins/font-awesome/css/font-awesome.min.css' />
 	<link rel='stylesheet' type='text/css' media='all' href='assets/plugins/select2/select2.min.css' />
@@ -24,7 +24,17 @@
     <link rel="stylesheet" type="text/css" media="all" href="assets/plugins/amcharts/export.css" />
     <!-- Fonts -->
 	<link rel='stylesheet' type='text/css' media='all' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800%7CRaleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CDroid+Serif%3A400%2C700%7CMontserrat%7CMontserrat%3Aregular%2C700%2Clatin'/>
+   <!-- Orbitron font (futuristic crypto style) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  
+</style>
+
+
+
 </head>
+
 
 <body class="page-template-default page page-child footer_row1_off is_header_semitransparent cryptic-one-page is_nav_sticky">
     <div class="cryptic_preloader_holder cryptic_preloader_holder_ico v2_ball_pulse">
@@ -67,7 +77,7 @@
                         </p>
                         <p class="login-submit">
                             <input type="submit" name="submit" id="submit" class="button button-primary" value="Log In" />
-                            <input type="hidden" name="redirect_to" value="#" />
+                            <input type="hidden" name="redirect_to" value="" />
                         </p>
                     </form>
                     <p class="um-notice err text-center">Registration is currently disabled</p>
@@ -90,7 +100,7 @@
         <!-- INSIDE SEARCH OVERLAY -->
         <div class="fixed-search-inside">
             <div class="modeltheme-search">
-                <form method="GET" action="#">
+                <form method="GET">
                     <input class="search-input" placeholder="Enter search term..." type="search" value="" name="s" id="search" />
                     <i class="fa fa-search"></i>
                     <input type="hidden" name="post_type" value="post" />
@@ -112,11 +122,11 @@
                 <div class="left-side">
                     <h1 class="logo">
                         <a href="index.html">
-                            <img src="assets/images/Vector-Smart-Object2.png" alt="BitWallet" />
+                            <img src="" alt="BitWallet" />
                         </a>
                     </h1>
                     <aside id="search-3" class="widget widget_search">
-                        <form role="search" method="get" class="search-form" action="#">
+                        <form role="search" method="get" class="search-form">
                             <label>
                                 <span class="screen-reader-text">Search for:</span>
                                 <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
@@ -152,13 +162,14 @@
       <nav class="nav-menu" id="navMenu">
           <ul>
               <li><a href="index.html">HOME </a></li>
-              <li><a href="index.html#to_token_sale">VISION  </a></li>
-              <li><a href="index.html#to_products">ECOSYSTEM  </a></li>
+              <li><a href="index.html#vision">VISION  </a></li>
+              <li><a href="index.html#ecosystem">ECOSYSTEM  </a></li>
               <li><a href="index.html#to_roadmap">ROADMAP</a></li>
               <li><a href="faq.html">FAQ</a></li>
-              <li><a href="index.html#to_testimonial">A PROPOS </a></li>
+              <li><a href="index.html#securite">SECURITE</a></li>
+              <li><a href="about.html">A PROPOS </a></li>
               <li><a href="contact.html">CONTACT </a></li>
-              <li><a href="blog.html">NEWS </a></li>
+              
           </ul>
       </nav>
 
@@ -203,6 +214,7 @@
                 <p style="color:#b8c0d4; font-size:17px; margin-top:15px;">
                     We’re here to help. Fill out the form and our team will get back to you shortly.
                 </p>
+                <br>
             </div>
         </div>
 
@@ -299,21 +311,7 @@
 	    </a>
 	     
 	     <!-- TICKERS DARK -->
-	    <div class="tickers-black-sm crypto-ticker">
-	        <ul id="webticker-dark-icons">
-	            <li data-update="item1"><i class="cc BTC"></i> BTC <span class="coin-value"> $11.039232</span></li> 
-	            <li data-update="item2"><i class="cc ETH"></i> ETH <span class="coin-value"> $1.2792</span></li> 
-	            <li data-update="item3"><i class="cc GAME"></i> GAME <span class="coin-value"> $11.039232</span></li> 
-	            <li data-update="item4"><i class="cc LBC"></i> LBC <span class="coin-value"> $0.588418</span></li> 
-	            <li data-update="item5"><i class="cc NEO"></i> NEO <span class="coin-value"> $161.511</span></li> 
-	            <li data-update="item6"><i class="cc STEEM"></i> STE <span class="coin-value"> $0.551955</span></li> 
-	            <li data-update="item7"><i class="cc LTC"></i> LIT <span class="coin-value"> $177.80</span></li> 
-	            <li data-update="item8"><i class="cc NOTE"></i> NOTE <span class="coin-value"> $13.399</span></li>
-	            <li data-update="item9"><i class="cc MINT"></i> MINT <span class="coin-value"> $0.880694</span></li> 
-	            <li data-update="item10"><i class="cc IOTA"></i> IOT <span class="coin-value"> $2.555</span></li> 
-	            <li data-update="item11"><i class="cc DASH"></i> DAS <span class="coin-value"> $769.22</span></li>   
-	        </ul>
-	    </div>       
+	         
 
 	    <!-- FOOTER -->
 	   <footer>
@@ -378,12 +376,7 @@
 
     <div class="footer-divider"></div>
 
-    <div class="footer-disclaimer">
-        Cryptocurrency investments are highly speculative and involve significant risk. The 
-        value of cryptocurrencies can fluctuate widely, and there is a risk of losing all of 
-        your investment. You should carefully consider your investment objectives, level of 
-        experience, and risk tolerance before making any investment decisions.
-    </div>
+    
 
 </footer>
 	    <div class="spacer_40"></div>
