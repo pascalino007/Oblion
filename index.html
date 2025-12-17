@@ -210,8 +210,49 @@
                                               <div class="text-right BitWallet-btn modeltheme_button wow fadeInLeft wpb_start_animation">
                                                 <a style="font-family: 'Montserrat' " href="https://t.me/OblionE_Official" class="btn btn-primary">Rejoindre la communauté</a>
                                             </div>
-                                           
-                                           
+                                                                      <div class="hero-content cl-white mw--585 wow fadeInUp">
+                    
+                     <div class="container">
+            <div class="hero-wrapper">
+
+                <div class="hero-button-group" style="margin-right: 300px;">
+                       
+                    </div>
+
+
+                <div class="hero-content cl-white mw--585 wow fadeInUp">
+                    
+                    <ul class="countdown d-flex flex-wrap cl-white" style="display: flex; margin-top: 25px; margin-left: 50px;">
+                        <li>
+                            <h2 class="title"><span class="days">00</span></h2>
+                            <p class="days_text">days</p>
+                        </li>
+                        <li>
+                            <h2 class="title"><span class="hours">00</span></h2>
+                            <p class="hours_text">hours</p>
+                        </li>
+                        <li>
+                            <h2 class="title"><span class="minutes">00</span></h2>
+                            <p class="minu_text">minutes</p>
+                        </li>
+                        <li>
+                            <h2 class="title"><span class="seconds">00</span></h2>
+                            <p class="seco_text">seconds</p>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <br>
+                <br>
+                <div class="hero-thumb d-none d-lg-block wow fadeInLeft">
+                     
+                    
+                </div>
+            </div>
+        </div>
+                   
+                </div>
+                  
                                             
                                         </div>
 
@@ -858,9 +899,9 @@
         <div>
             <h4>Legals</h4>
             <div class="footer-links">
-                <a href="#">TERMS OF USE</a>
-                <a href="#">PRIVACY POLICY</a>
-                <a href="#">ROADMAP</a>
+                <a href="cgu.html">TERMS OF USE</a>
+                <a href="#securite">PRIVACY POLICY</a>
+                <a href="#to_roadmap">ROADMAP</a>
               
             </div>
         </div>
@@ -900,6 +941,48 @@
 <script>
 
 (function(){
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Target date: 2 May 2026 at 00:00:00
+    const targetDate = new Date("2026-05-02T00:00:00").getTime();
+
+    const daysEl = document.querySelector(".days");
+    const hoursEl = document.querySelector(".hours");
+    const minutesEl = document.querySelector(".minutes");
+    const secondsEl = document.querySelector(".seconds");
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance <= 0) {
+            daysEl.textContent = "00";
+            hoursEl.textContent = "00";
+            minutesEl.textContent = "00";
+            secondsEl.textContent = "00";
+            clearInterval(timer);
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        daysEl.textContent = days;
+        hoursEl.textContent = String(hours).padStart(2, "0");
+        minutesEl.textContent = String(minutes).padStart(2, "0");
+        secondsEl.textContent = String(seconds).padStart(2, "0");
+    }
+
+    updateCountdown(); // initial call
+    const timer = setInterval(updateCountdown, 1000);
+
+});
+
+
   var v = document.querySelector('.hero-video');
   if(!v) return;
   // Ensure browser sees it as muted (some browsers require the property, not just the attribute)

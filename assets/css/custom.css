@@ -2396,16 +2396,24 @@ body[class*="bg"] .select-bar .list {
     text-transform: capitalize;
 }
 
+.countdown {
+
+
+
+}
+
 @media screen and (max-width: 400px) {
     .hero-content .countdown {
         justify-content: space-between;
         margin-left: -10px;
+       
         margin-right: -10px;
     }
 
     .hero-content .countdown li {
-        width: calc(50% - 20px);
+        width: 100px;
         margin-left: 10px;
+        padding: 50px;
         margin-right: 10px;
     }
 }
