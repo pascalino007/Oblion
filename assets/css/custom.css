@@ -2396,11 +2396,7 @@ body[class*="bg"] .select-bar .list {
     text-transform: capitalize;
 }
 
-.countdown {
 
-
-
-}
 
 @media screen and (max-width: 400px) {
     .hero-content .countdown {
@@ -7735,3 +7731,68 @@ textarea {
 .hover-cl-13:hover {
     color: #0eb8d9;
 }
+
+/* ===== COUNTDOWN BASE STYLE ===== */
+.countdown {
+    gap: 10px;
+}
+
+.countdown li {
+    list-style: none;
+    min-width: 110px;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+/* Numbers */
+.countdown .title {
+    font-size: 48px;
+    line-height: 1;
+}
+
+/* Labels */
+.countdown p {
+    font-size: 14px;
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+    
+
+    .countdown {
+        justify-content: center;
+        margin-left: -10 !important;
+        
+    }
+
+    .countdown li {
+        flex: 0 0 calc(50% - 16px); /* 2 per row */
+        min-width: unset;
+        padding: 20px 10px;
+    }
+
+    .countdown .title {
+        font-size: 42px;
+    }
+
+    .countdown p {
+        font-size: 13px;
+    }
+}
+
+/* ===== SMALL PHONES ===== */
+@media (max-width: 480px) {
+
+    .countdown .title {
+        font-size: 36px;
+    }
+
+    .countdown p {
+        font-size: 12px;
+    }
+}
+
