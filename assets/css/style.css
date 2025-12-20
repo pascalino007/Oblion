@@ -31220,25 +31220,16 @@ body {
 }
 
 /* NAV MENU (MOBILE FIRST) */
-/* MOBILE FIRST */
 .nav-menu {
     position: fixed;
     top: 60px;
-    right: 0;
-    width: 75vw;
-    max-width: 320px;
-    height: calc(100vh - 60px);
-    background: rgba(0,0,0,0.95);
+    
+    width: 70%;
+    height: calc(100% - 60px);
+    background: rgba(0,0,0,0.9);
     padding: 20px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 999;
+    transition: 0.3s ease-in-out;
 }
-
-.nav-menu.active {
-    transform: translateX(0);
-}
-
 
 .nav-menu ul {
     list-style: none;
@@ -31293,7 +31284,7 @@ body {
 .nav-menu {
     position: fixed;
     top: 60px;
-     
+    right: -100%;
     width: 70%;
     height: calc(100% - 60px);
     background: rgba(0,0,0,0.9);
