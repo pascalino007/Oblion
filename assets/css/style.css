@@ -31284,12 +31284,19 @@ body {
 .nav-menu {
     position: fixed;
     top: 60px;
-    right: -100%;
+   
     width: 70%;
     height: calc(100% - 60px);
     background: rgba(0,0,0,0.9);
     padding: 20px;
     transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 900px){
+
+    .nav-menu {
+        display : none ;
+    }
 }
 
 .nav-menu ul {
